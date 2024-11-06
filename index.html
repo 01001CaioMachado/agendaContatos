@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Agenda de Contatos</h2>
+        </header>
+        <form id="formCadastro">
+            <input type="text" id="nome-Cadastro" required placeholder=" Nome Completo"/>
+            <input type="tel" id="telefone-Cadastro" required placeholder="(XX) XXXXX-XXXX" maxlength="15" oninput="formatarTelefone(this)">
+            <button type="submit">Cadastrar + </button>
+        </form>
+        <table cellspacing = "0">
+            <thead>
+                <tr>
+                    <th>
+                        ID Cadastro
+                    </th>
+                    <th>
+                        Nome 
+                    </th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <td id="userId">0</td>
+                <td id="nome0"> ---</td>
+                <td id="telefone0">---</td>
+            </tfoot>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
